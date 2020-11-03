@@ -1,2 +1,10 @@
-# templateBot
-Discord.js Bot Template now using TypeScript
+# SavageX Discord Bot
+
+### Installation
+1. Download the latest release
+
+### Command List
+
+
+### Configuration
+
