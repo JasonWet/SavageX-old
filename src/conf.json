@@ -1,0 +1,26 @@
+{
+  "token": "ADD_YOUR_TOKEN_HERE",
+  "prefix": "!",
+  "botStatus": "ONLINE",
+  "botGameType": "WATCHING",
+  "botGame": "SOME_PRESENCE",
+  "embedColor": "#ffffff",
+
+  "toggles": {
+    "information": {
+      "user": true,
+      "channel": true,
+      "role": true,
+      "guild": true
+    },
+
+    "moderation": {
+      "ban": true,
+      "kick": true,
+      "mute": true,
+      "unban": true,
+      "unmute": true,
+      "clear": true
+    }
+  },
+}
