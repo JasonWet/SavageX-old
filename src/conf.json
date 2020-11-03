@@ -22,5 +22,14 @@
       "unmute": true,
       "clear": true
     }
-  }
+  },
+  "roles": {
+    "joinRole": "ROLE_ID_HERE",
+    "mutedRole": "ROLE_ID_HERE"
+  },
+  "channels": {
+    "joinLogsChannel": "CHANNEL_ID_HERE",
+    "leaveLogsChannel": "CHANNEL_ID_HERE"
+  },
+  "categories": {}
 }
