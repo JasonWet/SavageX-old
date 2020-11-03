@@ -1,0 +1,17 @@
+{
+  "information": {
+    "user": true,
+    "channel": true,
+    "role": true,
+    "guild": true
+  },
+  "moderation": {
+    "ban": true,
+    "kick": true,
+    "mute": true,
+    "unban": true,
+    "unmute": true,
+    "clear": true,
+  },
+
+}
