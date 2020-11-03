@@ -1,16 +1,10 @@
 {
-  "name": "templatebot",
+  "name": "SavageX",
   "version": "1.0.0",
-  "description": "Discord.js TemplateBot",
-  "main": "index.js",
-  "dependencies": {
-    "discord.js": "^12.4.0",
-    "file-system": "^2.2.2",
-    "fs": "0.0.1-security",
-    "mongoose": "^5.10.9",
-    "npm": "^6.14.8"
-  },
-  "devDependencies": {},
+  "description": "SavageX Open Source Discord Bot",
+  "main": "src/index.js",
+  "author": "JasonWet",
+  "license": "NONE",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/JasonWet/templateBot.git"
   },
-  "author": "Jason Dry",
-  "license": "ISC"
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {}
 }
