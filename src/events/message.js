@@ -1,5 +1,5 @@
 const { client } = require('../index');
-const conf = require('../savagex/conf.json');
+const conf = require('../conf.json');
 
 client.on('message', async (message) => {
     /*
