@@ -1,5 +1,5 @@
 const { client } = require('../index');
-const conf = require('../conf.json');
+const conf = require('../savagex/conf.json');
 
 (async () => {
     //Login to the bot with the token
