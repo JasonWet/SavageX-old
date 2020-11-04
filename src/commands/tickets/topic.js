@@ -10,7 +10,13 @@ module.exports.run = (client, message, args) => {
 
     let topic = args.join(" ");
 
-    message.channel.setTopic(`${topic}`).then(() => {
+    message.channel.setTopic(`${topic}`)
+        .catch((e) => {
+            console.log(`${message.guild.name} - Join discord.gg/savagelabs for support`)
+            console.log(e.stack)
+            console.log(`${message.guild.name} - Join discord.gg/savagelabs for support`)
+        })
+        .then(() => {
         message.channel.send(message.author + 'has set the topic to `' + topic + '`')
     })
 }
