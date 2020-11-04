@@ -6,5 +6,5 @@ module.exports.run = (client, message, args) => {
 
 module.exports.config = {
     command: 'ticket',
-    aliases: []
+    aliases: ['new']
 }
