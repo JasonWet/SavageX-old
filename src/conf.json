@@ -2,8 +2,8 @@
   "token": "ADD_YOUR_TOKEN_HERE",
   "prefix": "!",
   "botStatus": "ONLINE",
-  "botGameType": "WATCHING",
-  "botGame": "SOME_PRESENCE",
+  "botActivityType": "WATCHING",
+  "botActivityName": "SOME_PRESENCE",
   "embedColor": "#ffffff",
   "successEmbedColor": "#008000",
   "failEmbedColor": "#FF0000",
@@ -31,7 +31,10 @@
   },
   "channels": {
     "joinLogsChannel": "CHANNEL_ID_HERE",
-    "leaveLogsChannel": "CHANNEL_ID_HERE"
+    "leaveLogsChannel": "CHANNEL_ID_HERE",
+    "banLogsChannel": "CHANNEL_ID_HERE",
+    "kickLogsChannel": "CHANNEL_ID_HERE",
+    "muteLogsChannel": "CHANNEL_ID_HERE"
   },
   "categories": {}
 }
