@@ -2,6 +2,8 @@ const Discord = module.require('discord.js');
 const conf = require('../../conf.json')
 
 module.exports.run = async (client, message, args) => {
+    if (conf.toggles.moderation.kick !== true) return message.channel.send(':x: Command Disabled')
+
     if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send(":x: Insufficient Permission")
 
     let id = args[0];
