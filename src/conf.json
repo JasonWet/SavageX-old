@@ -35,7 +35,8 @@
   },
   "roles": {
     "joinRole": "ROLE_ID_HERE",
-    "mutedRole": "ROLE_ID_HERE"
+    "mutedRole": "ROLE_ID_HERE",
+    "supportRole": "ROLE_ID_HERE"
   },
   "channels": {
     "joinLogsChannel": "CHANNEL_ID_HERE",
@@ -44,5 +45,7 @@
     "kickLogsChannel": "CHANNEL_ID_HERE",
     "muteLogsChannel": "CHANNEL_ID_HERE"
   },
-  "categories": {}
+  "categories": {
+    "ticketCategory": "CATEGORY_ID_HERE"
+  }
 }
