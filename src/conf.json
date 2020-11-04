@@ -23,6 +23,14 @@
       "unban": true,
       "unmute": true,
       "clear": true
+    },
+    "tickets": {
+      "ticket": true,
+      "add": true,
+      "remove": true,
+      "topic": true,
+      "rename": true,
+      "close": true
     }
   },
   "roles": {
