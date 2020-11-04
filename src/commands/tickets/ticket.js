@@ -2,6 +2,8 @@ const Discord = module.require('discord.js');
 const conf = require('../../conf.json')
 
 module.exports.run = (client, message, args) => {
+    if (conf.toggles.tickets.ticket !== true) return message.channel.send(':x: Command Disabled');
+
     message.guild.channels.create(`${message.user.name}-${message.user.discriminator}`, {
         type: "text",
         parent: conf.categories.ticketCategory,
