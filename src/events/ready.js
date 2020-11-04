@@ -9,10 +9,10 @@ const conf = require('../conf.json');
 client.on('ready', async () => {
 
     client.user.setPresence({
-        status: 'idle',
+        status: `${conf.botStatus}`,
         activity: {
-            name: `${conf.activityMessage}`,
-            type: 'WATCHING'
+            name: `${conf.botActivityName}`,
+            type: `${conf.botActivityType}`
         }
     })
     console.log(`${client.user.username} is now ready!` && `Join discord.gg/savagelabs for support`)
