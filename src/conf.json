@@ -24,13 +24,17 @@
       "unmute": true,
       "clear": true
     },
+    "suggestions": {
+      "suggest": true
+    },
     "tickets": {
       "ticket": true,
       "add": true,
       "remove": true,
       "topic": true,
       "rename": true,
-      "close": true
+      "close": true,
+      "ticketLogs": true
     }
   },
   "roles": {
@@ -43,10 +47,16 @@
     "leaveLogsChannel": "CHANNEL_ID_HERE",
     "banLogsChannel": "CHANNEL_ID_HERE",
     "kickLogsChannel": "CHANNEL_ID_HERE",
-    "muteLogsChannel": "CHANNEL_ID_HERE"
+    "muteLogsChannel": "CHANNEL_ID_HERE",
+    "ticketLogsChannel": "CHANNEL_ID_HERE",
+    "suggestionChannel": "CHANNEL_ID_HERE"
   },
   "categories": {
     "ticketCategory": "CATEGORY_ID_HERE"
+  },
+  "emojis": {
+    "checkEmoji": "EMOJI_ID_HERE",
+    "crossEmoji": "EMOJI_ID_HERE"
   },
   "messages": {
     "newTicketMessage": "Thank you for opening a support ticket! Someone will be with you as soon as possible."
