@@ -47,5 +47,8 @@
   },
   "categories": {
     "ticketCategory": "CATEGORY_ID_HERE"
+  },
+  "messages": {
+    "newTicketMessage": "Thank you for opening a support ticket! Someone will be with you as soon as possible."
   }
 }
