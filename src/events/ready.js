@@ -15,5 +15,5 @@ client.on('ready', async () => {
             type: 'WATCHING'
         }
     })
-    console.log(`${client.user.username} is now ready!`)
+    console.log(`${client.user.username} is now ready!` && `Join discord.gg/savagelabs for support`)
 });
