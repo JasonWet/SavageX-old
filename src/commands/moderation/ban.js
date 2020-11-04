@@ -26,7 +26,7 @@ module.exports.run = async (client, message, args) => {
     await mentioned.ban({ reason: `You have been banned from ${message.guild.name} by ${message.author.tag} for ${reason}`}).then(() => {
         let embed = new Discord.MessageEmbed()
             .setTitle(`BANNED`)
-            .setColor(conf.embedColor)
+            .setColor(`${conf.embedColor}`)
             .addField("Banned User", `${mentioned} / ${mentioned.user.tag} / ${mentioned.id}`)
             .addField("Banned By", `<@${message.author.id}> / ${message.author.tag} / ${message.author.id}`)
             .addField("Banned In", message.channel)
