@@ -2,7 +2,7 @@ const Discord = module.require('discord.js');
 const conf = require('../../conf.json')
 
 module.exports.run = (client, message, args) => {
-    if (conf.toggles.tickets.add !== true) return message.channel.send(':x: Command Disabled');
+    if (conf.toggles.tickets.remove !== true) return message.channel.send(':x: Command Disabled');
 
     let id = args[0];
 
