@@ -5,6 +5,8 @@
   "botGameType": "WATCHING",
   "botGame": "SOME_PRESENCE",
   "embedColor": "#ffffff",
+  "successEmbedColor": "#008000",
+  "failEmbedColor": "#FF0000",
 
   "toggles": {
     "information": {
