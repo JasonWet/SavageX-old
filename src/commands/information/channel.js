@@ -16,6 +16,7 @@ module.exports.run = (client, message, args) => {
         .addField(`Mention / Name / ID`, mentioned + ' / ' + mentioned.name + ' / ' + mentioned.id)
         .addField(`Parent Name / Parent ID`, mentioned.parent.name + ' / ' + mentioned.parent.id)
         .addField(`Type`, mentioned.type)
+        .addField(`Position`, mentioned.position)
         .addField(`Created At`, mentioned.createdAt)
         .addField(`Permissions`, '')
         .setTimestamp()
