@@ -25,19 +25,11 @@ module.exports.run = (client, message, args) => {
                 if (collection === 'confirm') {
                     message.channel.send('Ticket closure confirmed!')
                     message.channel.send("Ticket will be closed in 5 seconds");
-                    function ticketClosed() {
-                        message.channel.delete("Ticket Closed")
-                            .catch((e) => {
-                                console.log(`${message.guild.name} - Join discord.gg/savagelabs for support`)
-                                console.log(e.stack)
-                                console.log(`${message.guild.name} - Join discord.gg/savagelabs for support`)
-                            });
-                    }
-                    setTimeout(ticketClosed, 5000);
+                    setTimeout(closeTicket, 5000);
                 } else if (collection === 'deny') {
                     message.channel.send('Ticket closure denied!')
                 } else {
-                    message.channel.send('Please reply with `confirm` or `deny` to confirm or deny ticket closure')
+                    message.channel.send('Please restart the closure process')
                 }
             })
     })
