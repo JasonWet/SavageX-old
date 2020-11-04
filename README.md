@@ -20,6 +20,18 @@
 - !unban [user]
 - !clear [1-99]
 
+###### Suggestion Commands
+
+- !suggest [suggestion]
+
+###### Ticket Commands
+
+- !ticket
+- !close
+- !remove [user]
+- !add [user]
+- !rename [new name]
+- !topic [topic]
 
 ### Command Permissions
 ###### Moderation Permissions
