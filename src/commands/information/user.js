@@ -31,7 +31,6 @@ module.exports.run = (client, message, args) => {
             .setFooter(message.guild.name + ' - ' + message.author.tag, message.author.avatarURL())
         message.channel.send(message.author, embed)
     }
-    message.channel.send(message.guild.name)
 }
 
 module.exports.config = {
