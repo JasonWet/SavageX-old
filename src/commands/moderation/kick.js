@@ -26,7 +26,7 @@ module.exports.run = async (client, message, args) => {
     await mentioned.kick(`You have been kicked from ${message.guild.name} by ${message.author.tag} for ${reason}`).then(() => {
         let embed = new Discord.MessageEmbed()
             .setTitle(`KICKED`)
-            .setColor(conf.embedColor)
+            .setColor(`${conf.embedColor}`)
             .addField("Kicked User", `${mentioned} / ${mentioned.user.tag} / ${mentioned.id}`)
             .addField("Kicked By", `<@${message.author.id}> / ${message.author.tag} / ${message.author.id}`)
             .addField("Kicked In", message.channel)

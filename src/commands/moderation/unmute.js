@@ -22,7 +22,7 @@ module.exports.run = async (client, message, args) => {
 
     let embed = new Discord.MessageEmbed()
         .setTitle(`UNMUTED`)
-        .setColor("3D98D4")
+        .setColor(`${conf.embedColor}`)
         .addField("Unmuted User", `${mentioned} - ${mentioned.user.tag} - ${mentioned.id}`)
         .addField("Unmuted By", `<@${message.author.id}> - ${message.author.tag} - ${message.author.id}`)
         .addField("Unmuted In", message.channel)

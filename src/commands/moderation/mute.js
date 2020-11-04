@@ -30,7 +30,7 @@ module.exports.run = async (client, message, args) => {
     await mentioned.roles.add(muted).then(() => {
         let embed = new Discord.MessageEmbed()
             .setTitle(`MUTED`)
-            .setColor("3D98D4")
+            .setColor(`${conf.embedColor}`)
             .addField("Muted User", `${mentioned} - ${mentioned.user.tag} - ${mentioned.id}`)
             .addField("Muted By", `<@${message.author.id}> - ${message.author.tag} - ${message.author.id}`)
             .addField("Muted In", message.channel)

@@ -17,7 +17,7 @@ module.exports.run = async (client, message, args) => {
     await message.guild.members.unban(`${args[0]}`).then(() => {
         let embed = new Discord.MessageEmbed()
             .setTitle(`UNBANNED`)
-            .setColor("3D98D4")
+            .setColor(`${conf.embedColor}`)
             .addField("Unbanned ID", `${args[0]}`)
             .addField("Unbanned By", `<@${message.author.id}> - ${message.author.tag} - ${message.author.id}`)
             .addField("Unbanned In", message.channel)
