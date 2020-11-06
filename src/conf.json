@@ -35,6 +35,11 @@
       "rename": true,
       "close": true,
       "ticketLogs": true
+    },
+    "JoinLeave": {
+      "joinLogs": true,
+      "leaveLogs": true,
+      "memberCount": true
     }
   },
   "roles": {
@@ -49,7 +54,8 @@
     "kickLogsChannel": "CHANNEL_ID_HERE",
     "muteLogsChannel": "CHANNEL_ID_HERE",
     "ticketLogsChannel": "CHANNEL_ID_HERE",
-    "suggestionChannel": "CHANNEL_ID_HERE"
+    "suggestionChannel": "CHANNEL_ID_HERE",
+    "memberCountChannel": "CHANNEL_ID_HERE"
   },
   "categories": {
     "ticketCategory": "CATEGORY_ID_HERE"
@@ -59,6 +65,7 @@
     "crossEmoji": "EMOJI_ID_HERE"
   },
   "messages": {
-    "newTicketMessage": "Thank you for opening a support ticket! Someone will be with you as soon as possible."
+    "newTicketMessage": "Thank you for opening a support ticket! Someone will be with you as soon as possible.",
+    "memberCountMessage": "Members:"
   }
 }

@@ -3,8 +3,10 @@ const Discord = require('discord.js');
 const conf = require('../conf.json');
 
 client.on(`guildMemberAdd`, async member => {
+    if (conf.toggles.JoinLeave.joinLogs !== true) return;
+
     let channel = member.guild.channels.cache.get(conf.channels.joinLogsChannel);
-    if (!channel) return console.log(`${member.guild.name} - Join Logs Channel not set...` && `${message.guild.name} - Join discord.gg/savagelabs for support`)
+    if (!channel) return console.log(`${member.guild.name} - Join Logs Channel not set...` && `${member.guild.name} - Join discord.gg/savagelabs for support`)
 
     const embed = new Discord.MessageEmbed()
         .setTitle(`Join (${member.guild.memberCount})`)
@@ -16,5 +18,10 @@ client.on(`guildMemberAdd`, async member => {
     let role = member.guild.roles.cache.get(conf.roles.joinRole);
     if (role !== undefined) {
         await member.roles.add(conf.roles.joinRole)
+    }
+    if (conf.toggles.JoinLeave.memberCount === true) {
+        let channel = member.guild.channels.cache.get(conf.channels.memberCountChannel);
+        if (!channel) return console.log(`${member.guild.name} - Member Count Channel not set...` && `${member.guild.name} - Join discord.gg/savagelabs for support`)
+        await channel.setName(conf.messages.memberCountMessage + ` ` + member.guild.memberCount)
     }
 });
